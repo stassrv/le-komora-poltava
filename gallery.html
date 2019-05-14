@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Le Komora Poltava</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="ba-header">
+      <div class="ba-container">
+        <div class="ba-header-bar">
+          <a href="index.html">
+            <img src="img/logo5.jpg" alt="logo" />
+          </a>
+          <nav>
+            <button class="ba-menu-toggle">
+              <svg
+                height="32"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 10h24a2 2 0 0 0 0-4H4a2 2 0 0 0 0 4zm24 4H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zm0 8H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z"
+                />
+              </svg>
+            </button>
+            <ul class="ba-menu">
+                <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">Про нас</a></li>
+              <li><a href="menu.html">Меню</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.ba-header-bar -->
+      </div>
+      <!-- /.ba-container -->
+    </header>
+    <!-- /.ba-header -->
+    <main>
+      <div class="ba-fon-gal">
+        <section class="ba-gallary">
+          <div class="ba-container">
+            <div class="ba-row">
+              <div class="ba-col-medium-4 ba-col-small-12">
+                <img src="img/g2.jpg" alt="11" />
+              </div>
+              <div class="ba-col-medium-4 ba-col-small-12">
+                <img src="img/g5.jpg" alt="11" />
+              </div>
+              <div class="ba-col-medium-4 ba-col-small-12">
+                <img src="img/g6.jpg" alt="11" />
+              </div>
+            </div>
+            <!-- /.ba-row -->
+            <div class="ba-row">
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g4.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g8.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g9.jpg" alt="11" />
+              </div>
+            </div>
+            <!-- /.ba-row -->
+            <div class="ba-row">
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g11.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g10.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g12.jpg" alt="11" />
+              </div>
+            </div>
+            <!-- /.ba-row -->
+            <div class="ba-row">
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g14.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g15.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g7.jpg" alt="11" />
+              </div>
+            </div>
+            <!-- /.ba-row -->
+            <div class="ba-row">
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g3.jpg" alt="11" />
+              </div>
+              <div class="ba-col-large-4 ba-col-medium-4 ba-col-small-12">
+                <img src="img/g13.jpg" alt="11" />
+              </div>
+            </div>
+            <!-- /.ba-row -->
+          </div>
+          <!-- /.ba-container -->
+        </section>
+        <!-- /.ba-gallary -->
+      </div>
+      <!-- /.ba-fon -->
+    </main>
+    <footer class="ba-footer"></footer>
+    <!-- /.ba-footer -->
+    <script>
+      let btn = document.querySelector(".ba-menu-toggle");
+      let menu = document.querySelector(".ba-menu");
+      btn.addEventListener("click", function(e) {
+        menu.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
