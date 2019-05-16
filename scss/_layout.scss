@@ -68,6 +68,22 @@ body, html {
     padding-left: 0;
 }
 
+.ba-row--300{
+	img{
+		object-fit: cover;
+		width: 100%;
+		height: 283px;
+	}
+}
+
+.ba-row--600{
+	img{
+		object-fit: cover;
+		width: 100%;
+		height: 600px;
+	}
+}
+
 .ba-col-12{
 	width: 100%;
 }
