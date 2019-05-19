@@ -91,6 +91,18 @@ a:hover {
 	height: 40px;
 }
 
+.icon-socials{
+	width: 30px;
+	height: 30px;
+	color: black;
+	filter: brightness(0) invert(0);
+	background: transparent;
+	&:hover{
+		filter: brightness(0) invert(0.4);
+		transition: filter .2s ease-in;
+	}
+}
+
 /* Layout */
 .ba-container {
 	padding-left: 20px;
@@ -285,7 +297,7 @@ nav {
 	height: 100vh;
 	background: #982B00 url(../img/fon-vine3.jpg) no-repeat;
 	background-size: cover;
-	border-bottom: 4px solid $primery-color;
+	// border-bottom: 4px solid $primery-color;
 
 	&__inner {
 		padding-top: 300px;
@@ -422,7 +434,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	height: 90px;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 
 	&__inner {
 		position: relative;
@@ -490,6 +502,7 @@ nav {
 
 	&__inner {
 		position: relative;
+		box-shadow: 0px 0px 16px 9px rgba(246,184,5,1);
 	}
 
 	&__article {
@@ -537,6 +550,7 @@ nav {
 	&--position {
 		position: absolute;
 	}
+
 
 	&:hover {
 		background-color: $primery-color;
@@ -671,20 +685,168 @@ nav {
 }
 
 .ba-to-gallary{
+	margin-bottom: 50px;
 	&-inner{
-		padding: 10px 0;
-		background: $decor-color;
+		border-top: 3px dashed $primery-color;
+		border-bottom: 2px dashed $primery-color;
+		padding: 30px 0;
+		background: #fff url(../img/wood.jpg);
+	background-size: cover;
+		// background: $decor-color;
 		// background: #fff;
 		&__item{
 			position: relative;
 			&__over{
 				position: absolute;
 				top: 0;
-				background-color: #fff;
+				bottom: 0;
+				right: 0;
+				left: 0;
 				z-index: 1;
+				color: none;
+				font-size: 0;
+				text-align: center;
+				font-weight: 700;
+				padding-top: 50px;
+				font-family: $heading-font-family;
+				text-transform: uppercase;
+				&:hover{
+					background-color: rgba(246, 185, 7, 0.5);
+					box-shadow: 0px 0px 16px 9px rgba(246,184,5,1);
+					font-size: 80px;
+					color: #000;
+					transition: background-color .5s ease-in, color .5s ease-in, box-shadow .3s ease-in; 
+				}
 				img{
 					z-index: -1;
 				}
+			}
+		}
+	}
+}
+
+.ba-contacts{
+	padding: 20px 0;
+	margin-bottom: 100px;
+	&-inner{
+		background-color: #292C29;
+		// border: 3px solid #C62000;
+		box-shadow: 10 0 5px #C62000;
+		box-shadow: 0px 0px 16px 9px rgba(198,32,0,1);
+		box-shadow: 0px 0px 16px 9px rgba(246,184,5,1);
+		// box-shadow: 0px 0px 16px 9px rgba(255,255,255,1);
+		img{
+			// box-shadow: 28px 2px 53px 1px rgba(255,255,255,1);
+			// box-shadow: 36px 0px 24px -13px rgba(246,184,5,1);
+			// box-shadow: 11px 0px 27px 14px rgba(255,255,255,1);
+			height: 400px;
+		}
+		&__content{
+			position: relative;
+			font-family: $heading-font-family;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 10px;
+		h3{
+			text-align: center;
+			color: #fff;
+		}
+		& ul {
+			padding: 0;
+		}
+
+		& li {
+			display: flex;
+			align-items: center;
+			margin-right: 0;
+			list-style: none;
+			padding-bottom: 10px;
+			span{
+				color: $primery-color;
+				margin-left: 10px;
+			}
+		}
+
+		& svg {
+			margin: 5px 10px;
+		}
+		
+		}
+	}
+
+}
+
+.ba-footer{
+	background-color: $primery-color;
+	padding: 0 0 20px 0;
+	position: relative;
+	&__action{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__item{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			height: 100px;
+			
+				span{
+					font-size: 20px;
+					color: #000;	
+					padding-top: 10px;
+				}
+				
+			
+		}
+	}
+	&__img{
+		filter: brightness(0) invert(0);
+		width: 80px;
+		height: 80px;
+		&:hover{
+			filter: brightness(0) invert(0.8);
+			transition: filter .2s ease-in;
+		}
+	}
+	&__perspective{
+		height: 1px;
+		z-index: 3;
+		&:after {
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 0;
+			right: 0;
+			bottom: 30px;
+			height: 50%;
+			background-color: $primery-color;
+			z-index: -1;
+			transform: skewY(-1.5deg);
+			// transform-origin: 0 0;
+		}
+	}
+	&-inner{
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
+		&__logo{
+			padding-top: 20px;
+		}
+		&__socials{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			p{
+				font-size: 30px;
+				font-weight: 700;
+				font-family: $heading-font-family;
+				line-height: 1;	
+			}
+			span{
+				font-size: 20px;
+				padding-top: 10px;
 			}
 		}
 	}
