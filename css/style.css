@@ -951,7 +951,8 @@ nav {
 #ba-map {
   width: 100%;
   height: 450px;
-  background-color: grey; }
+  background-color: grey;
+  margin-bottom: 100px; }
 
 .ba-filler {
   padding: 50px; }
@@ -1281,7 +1282,7 @@ nav {
           color: #F6B805;
           margin-left: 10px; }
       .ba-contacts-inner__content svg {
-        margin: 5px 10px; }
+        margin: 0px 10px; }
 
 .ba-footer {
   background-color: #F6B805;
