@@ -57,6 +57,7 @@
   $(document).ready(function (e){
     initMap();
   });
+
 })();
 
 (function($) {
@@ -68,6 +69,17 @@ $(function() {
   });
 
 });
+})(jQuery);
+
+;(function($) {
+	"use strict";
+	let accordion = $('.ba-accordion');
+
+	accordion.find('dt').on('click', function(e){
+		let clickedContent = $(this).next('dd');
+		accordion.find('dd').not(clickedContent).slideUp();
+		clickedContent.slideToggle();
+	});
 })(jQuery);
 
 let menuSlider = $('.ba-menu-slider');
